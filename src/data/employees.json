@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"name": "Alice Johnson",
+		"role": "Frontend Developer",
+		"department": "Engineering",
+		"location": "London",
+		"image": "https://randomuser.me/api/portraits/women/1.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Mark Evans",
+		"role": "UX Designer",
+		"department": "Design",
+		"location": "Manchester",
+		"image": "https://randomuser.me/api/portraits/men/2.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Sarah Brown",
+		"role": "Data Scientist",
+		"department": "Data Science",
+		"location": "Birmingham",
+		"image": "https://randomuser.me/api/portraits/women/1.jpg"
+	},
+	{
+		"id": 4,
+		"name": "David Smith",
+		"role": "Backend Developer",
+		"department": "Engineering",
+		"location": "Liverpool",
+		"image": "https://randomuser.me/api/portraits/men/2.jpg"
+	},
+	{
+		"id": 5,
+		"name": "Emma Wilson",
+		"role": "Product Manager",
+		"department": "Product",
+		"location": "Leeds",
+		"image": "https://randomuser.me/api/portraits/women/1.jpg"
+	}
+]
