@@ -20,7 +20,7 @@ const Dashboard = () => {
 };
 
 useEffect(() => { 
-    let results = employees;
+    let result = employees;
 
     if (searchTerm) { }
 }
