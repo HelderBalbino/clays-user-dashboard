@@ -27,4 +27,10 @@ useEffect(() => {
         emp.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
      }
-}
+
+        if (departmentFilter) {
+      result = result.filter(emp => emp.department === departmentFilter);
+    }
+
+    setFiltered(result);
+}, 
