@@ -22,5 +22,9 @@ const Dashboard = () => {
 useEffect(() => { 
     let result = employees;
 
-    if (searchTerm) { }
+    if (searchTerm) {
+          result = result.filter(emp =>
+        emp.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+     }
 }
