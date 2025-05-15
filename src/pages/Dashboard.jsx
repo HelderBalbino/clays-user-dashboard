@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import EmployeeCard from '../components/EmployeeCard';
 import SearchBar from '../components/SearchBar';
 import FilterMenu from '../components/FilterMenu';
@@ -18,3 +18,5 @@ const Dashboard = () => {
 			});
 	}, []);
 };
+
+useEffect(() => { }
