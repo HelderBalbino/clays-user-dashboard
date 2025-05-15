@@ -4,7 +4,7 @@ import SearchBar from '../components/SearchBar';
 import FilterMenu from '../components/FilterMenu';
 
 const Dashboard = () => {
-	const [employees, setEmployees] = useState([]); // All employee data
+	const [employees, setEmployees] = useState([]); // All employees data
 	const [filtered, setFiltered] = useState([]); // Filtered result
 	const [searchTerm, setSearchTerm] = useState('');
 	const [departmentFilter, setDepartmentFilter] = useState('');
