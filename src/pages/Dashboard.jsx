@@ -21,4 +21,6 @@ const Dashboard = () => {
 
 useEffect(() => { 
     let results = employees;
+
+    if (searchTerm) { }
 }
