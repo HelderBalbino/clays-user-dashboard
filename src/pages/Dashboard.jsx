@@ -17,20 +17,22 @@ const Dashboard = () => {
 				setFiltered(data);
 			});
 	}, []);
+
+	useEffect(() => {
+		let result = employees;
+
+		if (searchTerm) {
+			result = result.filter((emp) =>
+				emp.name.toLowerCase().includes(searchTerm.toLowerCase()),
+			);
+		}
+
+		if (departmentFilter) {
+			result = result.filter(
+				(emp) => emp.department === departmentFilter,
+			);
+		}
+
+		setFiltered(result);
+	}, [searchTerm, departmentFilter]);
 };
-
-useEffect(() => {
-	let result = employees;
-
-	if (searchTerm) {
-		result = result.filter((emp) =>
-			emp.name.toLowerCase().includes(searchTerm.toLowerCase()),
-		);
-	}
-
-	if (departmentFilter) {
-		result = result.filter((emp) => emp.department === departmentFilter);
-	}
-
-	setFiltered(result);
-}, [searchTerm, departmentFilter]);
