@@ -36,3 +36,17 @@ const Dashboard = () => {
 		setFiltered(result);
 	}, [searchTerm, departmentFilter]);
 };
+
+return (
+	<div className='p-6'>
+		<h1>Employee Dashboard</h1>
+		<SearchBar setSearchTerm={setSearchTerm} />
+		<FilterMenu setFilter={setDepartmentFilter} />
+
+		<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4'>
+			{filtered.map((emp) => (
+				<EmployeeCard key={emp.id} employee={emp} />
+			))}
+		</div>
+	</div>
+);
