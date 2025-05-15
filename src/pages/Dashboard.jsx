@@ -19,18 +19,18 @@ const Dashboard = () => {
 	}, []);
 };
 
-useEffect(() => { 
-    let result = employees;
+useEffect(() => {
+	let result = employees;
 
-    if (searchTerm) {
-          result = result.filter(emp =>
-        emp.name.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-     }
+	if (searchTerm) {
+		result = result.filter((emp) =>
+			emp.name.toLowerCase().includes(searchTerm.toLowerCase()),
+		);
+	}
 
-        if (departmentFilter) {
-      result = result.filter(emp => emp.department === departmentFilter);
-    }
+	if (departmentFilter) {
+		result = result.filter((emp) => emp.department === departmentFilter);
+	}
 
-    setFiltered(result);
-}, 
+	setFiltered(result);
+}, [searchTerm, departmentFilter]);
