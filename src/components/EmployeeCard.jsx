@@ -1,1 +1,3 @@
-const EmployeeCard = ({ employee }) => {};
+const EmployeeCard = ({ employee }) => {
+    return ( )
+};
