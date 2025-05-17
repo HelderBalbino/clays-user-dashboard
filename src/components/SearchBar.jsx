@@ -1,0 +1,5 @@
+const SearchBar = ({ setSearchTerm }) => {
+  return (
+   
+  );
+};
