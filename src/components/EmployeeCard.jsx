@@ -1,0 +1,1 @@
+const EmployeeCard = ({ employee }) => {};
