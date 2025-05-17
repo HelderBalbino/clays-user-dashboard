@@ -8,6 +8,9 @@ const EmployeeCard = ({ employee }) => {
 			/>
 			<h2 className='text-center mt-2 font-semibold'>{employee.name}</h2>
 			<p className='text-center text-sm'>{employee.role}</p>
+			<p className='text-center text-xs text-gray-500'>
+				{employee.department}
+			</p>
 		</div>
 	);
 };
