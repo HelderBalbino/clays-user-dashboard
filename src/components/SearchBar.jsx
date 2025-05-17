@@ -1,3 +1,3 @@
 const SearchBar = ({ setSearchTerm }) => {
-	return <input />;
+	return <input type='text' placeholder='Search by name' />;
 };
