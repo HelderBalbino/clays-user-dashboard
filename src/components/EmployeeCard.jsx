@@ -6,6 +6,7 @@ const EmployeeCard = ({ employee }) => {
 				alt={employee.name}
 				className='rounded-full w-24 h-24 mx-auto'
 			/>
+			<h2 className='text-center mt-2 font-semibold'>{employee.name}</h2>
 		</div>
 	);
 };
